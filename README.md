@@ -1,8 +1,8 @@
-# WillITan
-Web App that will take in user input including location and determine time it will take user to tan on a given day.
+# Will I Tan? :sunny:
+Web App that will take in user input (including geo-location, weather, skin type, etc.) and determine the amount of time it will take the user to tan on a given day. 
 
 ### Main User Story
-As a user, I want to know the time to stay in the sun, so that I can get a tan
+As a user, I want to know the amount of time needed to stay in the sun, so that I can get a nice tan
 
 ### Plan of Action Outline
 - Research variable relationships
