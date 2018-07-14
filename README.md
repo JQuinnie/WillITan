@@ -6,6 +6,17 @@ As a user, I want to know the amount of time needed to stay in the sun, so that 
 
 ### Plan of Action Outline
 - Research variable relationships
+  - Skin type
+  - UV radiation exposure
+    - Geography
+    - Altitude
+    - Time of year
+    - Time of day: _new Date()_
+    - Weather condition
+    - Surface reflection
+  - UV index
+  - Duration
+  - Use of sun block
 - Determine input requirements
 - Create logic between variables for calculation
 - Collection of APIs for data
