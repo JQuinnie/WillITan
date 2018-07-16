@@ -7,6 +7,8 @@ As a user, I want to know the amount of time needed to stay in the sun, so that 
 ### Plan of Action Outline
 - Research variable relationships
   - Skin type
+    - Fitzpatrick Skin Type Chart: https://en.wikipedia.org/wiki/Fitzpatrick_scale
+    - Add'l reference: https://www2.palomar.edu/anthro/adapt/adapt_4.htm
   - UV radiation exposure
     - Geography
     - Altitude
@@ -15,6 +17,7 @@ As a user, I want to know the amount of time needed to stay in the sun, so that 
     - Weather condition
     - Surface reflection
   - UV index
+    - OpenWeather API: https://openweathermap.org/api/uvi
   - Duration
   - Use of sun block
 - Determine input requirements
