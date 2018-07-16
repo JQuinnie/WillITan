@@ -20,6 +20,7 @@ As a user, I want to know the amount of time needed to stay in the sun, so that 
     - OpenWeather API: https://openweathermap.org/api/uvi
   - Duration
   - Use of sun block
+    - usage vs uv index: http://www.theozonehole.com/uvindex.htm
 - Determine input requirements
 - Create logic between variables for calculation
 - Collection of APIs for data
