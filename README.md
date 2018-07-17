@@ -17,7 +17,6 @@ As a user, I want to know the amount of time needed to stay in the sun, so that 
     - Weather condition
     - Surface reflection
   - UV index
-    - OpenWeather API: https://openweathermap.org/api/uvi
   - Duration
   - Use of sun block
     - usage vs uv index: http://www.theozonehole.com/uvindex.htm
@@ -28,6 +27,9 @@ As a user, I want to know the amount of time needed to stay in the sun, so that 
 - Create logic between variables for calculation
   > max sun tan time = (self protected time or skin type * 8)/(UVI * SPF)
 - Collection of APIs for data
+  - OpenWeather API: https://openweathermap.org/api/uvi
+  - OpenUV API: https://www.openuv.io/
+  - Google Elevation API: https://developers.google.com/maps/documentation/elevation/start
 - Create wireframe skeleton
 - Code logic in backend
 - Test test test
