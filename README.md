@@ -22,7 +22,11 @@ As a user, I want to know the amount of time needed to stay in the sun, so that 
   - Use of sun block
     - usage vs uv index: http://www.theozonehole.com/uvindex.htm
 - Determine input requirements
+  - USER: selects skin type
+  - USER: selects location
+  - USER: selects time of day
 - Create logic between variables for calculation
+  > max sun tan time = (self protected time or skin type * 8)/(UVI * SPF)
 - Collection of APIs for data
 - Create wireframe skeleton
 - Code logic in backend
