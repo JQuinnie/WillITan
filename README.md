@@ -31,6 +31,7 @@ As a user, I want to know the amount of time needed to stay in the sun, so that 
   - OpenUV API: https://www.openuv.io/
   - Google Elevation API: https://developers.google.com/maps/documentation/elevation/start
   - HTML5 Geolocation: https://www.w3schools.com/htmL/html5_geolocation.asp
+  - GMaps.js: https://hpneo.github.io/gmaps/
 - Create wireframe skeleton
 - Code logic in backend
 - Test test test
