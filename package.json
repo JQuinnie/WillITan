@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "will-i-tan",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "Fullstack MERN Web App that will take in user inputs to determine the time necessary for that user to get a tan.",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -10,21 +10,23 @@
     "client": "cd client && npm run start",
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "lint": "eslint ."
   },
-  "author": "",
+  "author": "JQuinnie",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0"
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-react": "^7.14.2",
+    "mocha": "^6.1.4"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "dotenv": "^6.0.0",
-    "express": "^4.16.3",
-    "if-env": "^1.0.4",
-    "path": "^0.12.7",
-    "request": "^2.87.0",
-    "request-promise": "^4.2.2"
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
   }
 }
