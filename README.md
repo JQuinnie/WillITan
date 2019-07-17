@@ -7,3 +7,7 @@ The web app will be using node/Express on the backend and React/SASS on the fron
 ## Main User Story
 
 As a user, I want to know the amount of time needed to stay in the sun, so that I can get a nice tan
+
+## MVP
+
+What is the MVP?
