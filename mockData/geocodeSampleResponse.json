@@ -99,7 +99,7 @@
     "requestUrl": "https://maps.googleapis.com/maps/api/geocode/json?address=1500%20Wynkoop%20St%2C%20Denver%20CO%2C%2080211&key=AIzaSyC1Rql1Fk6DYAEx-ljMJ-R34DTJzyptZzs",
     "query": {
       "address": "1500 Wynkoop St, Denver CO, 80211",
-      "key": "AIzaSyC1Rql1Fk6DYAEx-ljMJ-R34DTJzyptZzs"
+      "key": ""
     }
   }
 }
