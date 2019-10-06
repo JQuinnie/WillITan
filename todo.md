@@ -37,7 +37,7 @@
 - [ ] Add error handling
 - [ ] Add unit, integration, coverage tests
 - [ ] Include API callouts
-- [ ] Include a db?
+- [ ] Include a db (postgres? and redis)
 - [ ] Update Readme, how to run (backend client?)
 - [ ] Fancy up frontend
 - [ ] Make responsive
