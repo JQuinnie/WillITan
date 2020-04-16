@@ -42,7 +42,7 @@
 - [ ] Front-end Client UI
   - React with Hooks
   - check web responsiveness
-  - Tailwind CSS
+  - Material UI
   - All logic flow on server-side!
 - [ ] Deploy online
 - [ ] Incorporate Analytics
