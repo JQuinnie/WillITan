@@ -1,21 +1,39 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react';
 
-class App extends Component {
-  render() {
-    return (
+import { makeStyles } from '@material-ui/core/styles';
+import { Box, Container, FormControl, InputLabel, MenuItem, Select } from '@material-ui/core';
+import './App.css';
+
+const useStyles = makeStyles((theme) => ({
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+  },
+  selectEmpty: {
+    marginTop: theme.spacing(2),
+  },
+}));
+
+const App = () => {
+  const classes = useStyles();
+
+  return (
+    <Box>
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+        <Container>
           <h2>Will I Tan?</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+          <FormControl className={classes.formControl}>
+            <InputLabel>Select Type</InputLabel>
+            <Select>
+              <MenuItem value={10}>Ten</MenuItem>
+              <MenuItem value={20}>Twenty</MenuItem>
+              <MenuItem value={30}>Thirty</MenuItem>
+            </Select>
+          </FormControl>
+        </Container>
       </div>
-    );
-  }
-}
+    </Box>
+  );
+};
 
 export default App;
