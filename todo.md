@@ -29,7 +29,6 @@
   - Google Elevation API: https://developers.google.com/maps/documentation/elevation/start
   - HTML5 Geolocation: https://www.w3schools.com/htmL/html5_geolocation.asp
   - GMaps.js: https://hpneo.github.io/gmaps/
-- [ ] Create wireframe skeleton
 - [ ] Code logic in backend, review program flow
 - [ ] Modular functions
 - [ ] Async.js
@@ -39,6 +38,11 @@
 - [ ] Include API callouts
 - [ ] Include a db (postgres? and redis)
 - [ ] Update Readme, how to run (backend client?)
-- [ ] Fancy up frontend
-- [ ] Make responsive
+- [ ] Create wireframe skeleton
+- [ ] Front-end Client UI
+  - React with Hooks
+  - check web responsiveness
+  - Tailwind CSS
+  - All logic flow on server-side!
 - [ ] Deploy online
+- [ ] Incorporate Analytics
