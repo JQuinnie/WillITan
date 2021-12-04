@@ -24,3 +24,8 @@ app.use('/', routes);
 app.listen(PORT, () => {
   console.log(`🌎 ==> Server now on port ${PORT}!`);
 });
+
+process.on('SIGINT', () => {
+  console.log('\nGracefully shutting down from SIGINT (Ctrl-C)');
+  process.exit(1);
+});
