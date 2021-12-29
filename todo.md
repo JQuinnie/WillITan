@@ -6,6 +6,7 @@
   - Skin type
     - Fitzpatrick Skin Type Chart: https://en.wikipedia.org/wiki/Fitzpatrick_scale
     - Add'l reference: https://www2.palomar.edu/anthro/adapt/adapt_4.htm
+    - OpenUV knowledge base: https://www.openuv.io/kb
   - UV radiation exposure
     - Geography
     - Altitude
@@ -42,7 +43,7 @@
 - [ ] Front-end Client UI
   - React with Hooks
   - check web responsiveness
-  - Material UI
+  - ~~Material UI~~ Tailwaind CSS
   - All logic flow on server-side!
 - [ ] Deploy online
 - [ ] Incorporate Analytics
