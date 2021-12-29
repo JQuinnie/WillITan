@@ -1,4 +1,6 @@
+const elevation = require('../services/elevationService');
 const geocode = require('../services/geocodeService');
+const openUV = require('../services/openUVService');
 
 // This function wraps all upstream calls
 module.exports = async (req, res, next) => {
@@ -7,9 +9,12 @@ module.exports = async (req, res, next) => {
   let msg;
 
   try {
+    // get latlng
     const latLngResult = await geocode.getLatLng(address);
 
-    res.send(latLngResult);
+    // TODO: get elevation / altitude
+    const elevationResult = await elevation.getElevation(latLngResult.location);
+
   } catch (err) {
     next(new Error(`${msg} - ${err.message}`));
   }
