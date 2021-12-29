@@ -1,105 +1,41 @@
 {
-  "geocode": {
-    "status": 200,
-    "headers": {
-      "content-type": "application/json; charset=UTF-8",
-      "date": "Sun, 06 Oct 2019 00:19:45 GMT",
-      "pragma": "no-cache",
-      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
-      "cache-control": "no-cache, must-revalidate",
-      "access-control-allow-origin": "*",
-      "server": "mafe",
-      "x-xss-protection": "0",
-      "x-frame-options": "SAMEORIGIN",
-      "server-timing": "gfet4t7; dur=469",
-      "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000",
-      "accept-ranges": "none",
-      "vary": "Accept-Language,Accept-Encoding",
-      "connection": "close"
-    },
-    "json": {
-      "results": [
+  "results": [
+    {
+      "address_components": [
+        { "long_name": "1500", "short_name": "1500", "types": ["street_number"] },
+        { "long_name": "Wynkoop Street", "short_name": "Wynkoop St", "types": ["route"] },
+        { "long_name": "Central", "short_name": "Central", "types": ["neighborhood", "political"] },
+        { "long_name": "Denver", "short_name": "Denver", "types": ["locality", "political"] },
         {
-          "address_components": [
-            {
-              "long_name": "1500",
-              "short_name": "1500",
-              "types": ["street_number"]
-            },
-            {
-              "long_name": "Wynkoop Street",
-              "short_name": "Wynkoop St",
-              "types": ["route"]
-            },
-            {
-              "long_name": "Central",
-              "short_name": "Central",
-              "types": ["neighborhood", "political"]
-            },
-            {
-              "long_name": "Denver",
-              "short_name": "Denver",
-              "types": ["locality", "political"]
-            },
-            {
-              "long_name": "Denver County",
-              "short_name": "Denver County",
-              "types": ["administrative_area_level_2", "political"]
-            },
-            {
-              "long_name": "Colorado",
-              "short_name": "CO",
-              "types": ["administrative_area_level_1", "political"]
-            },
-            {
-              "long_name": "United States",
-              "short_name": "US",
-              "types": ["country", "political"]
-            },
-            {
-              "long_name": "80202",
-              "short_name": "80202",
-              "types": ["postal_code"]
-            }
-          ],
-          "formatted_address": "1500 Wynkoop St, Denver, CO 80202, USA",
-          "geometry": {
-            "bounds": {
-              "northeast": {
-                "lat": 39.7511526,
-                "lng": -105.0013637
-              },
-              "southwest": {
-                "lat": 39.75072420000001,
-                "lng": -105.0019219
-              }
-            },
-            "location": {
-              "lat": 39.7508853,
-              "lng": -105.0016393
-            },
-            "location_type": "ROOFTOP",
-            "viewport": {
-              "northeast": {
-                "lat": 39.75228738029151,
-                "lng": -105.0002938197085
-              },
-              "southwest": {
-                "lat": 39.74958941970851,
-                "lng": -105.0029917802915
-              }
-            }
-          },
-          "place_id": "ChIJqZcoc8R4bIcR4F5m-DwjuKI",
-          "types": ["premise"]
-        }
+          "long_name": "Denver County",
+          "short_name": "Denver County",
+          "types": ["administrative_area_level_2", "political"]
+        },
+        {
+          "long_name": "Colorado",
+          "short_name": "CO",
+          "types": ["administrative_area_level_1", "political"]
+        },
+        { "long_name": "United States", "short_name": "US", "types": ["country", "political"] },
+        { "long_name": "80202", "short_name": "80202", "types": ["postal_code"] },
+        { "long_name": "1129", "short_name": "1129", "types": ["postal_code_suffix"] }
       ],
-      "status": "OK"
-    },
-    "requestUrl": "https://maps.googleapis.com/maps/api/geocode/json?address=1500%20Wynkoop%20St%2C%20Denver%20CO%2C%2080211&key=AIzaSyC1Rql1Fk6DYAEx-ljMJ-R34DTJzyptZzs",
-    "query": {
-      "address": "1500 Wynkoop St, Denver CO, 80211",
-      "key": ""
+      "formatted_address": "1500 Wynkoop St, Denver, CO 80202, USA",
+      "geometry": {
+        "bounds": {
+          "northeast": { "lat": 39.7511526, "lng": -105.0013637 },
+          "southwest": { "lat": 39.75072420000001, "lng": -105.0019219 }
+        },
+        "location": { "lat": 39.7508853, "lng": -105.0016393 },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": { "lat": 39.75228738029151, "lng": -105.0002938197085 },
+          "southwest": { "lat": 39.74958941970851, "lng": -105.0029917802915 }
+        }
+      },
+      "place_id": "ChIJqZcoc8R4bIcR4F5m-DwjuKI",
+      "types": ["premise"]
     }
-  }
+  ],
+  "status": "OK"
 }
