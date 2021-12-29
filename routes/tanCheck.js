@@ -15,6 +15,10 @@ module.exports = async (req, res, next) => {
     // TODO: get elevation / altitude
     const elevationResult = await elevation.getElevation(latLngResult.location);
 
+    // TODO: get UV index
+    const uvResult = await openUV.getUVIndex(latLngResult.location, elevationResult);
+
+    res.send(uvResult);
   } catch (err) {
     next(new Error(`${msg} - ${err.message}`));
   }
