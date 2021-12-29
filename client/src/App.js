@@ -1,4 +1,5 @@
 import React from 'react';
+import InputBar from './components/InputBar';
 
 import { makeStyles } from '@material-ui/core/styles';
 import { Box, Container, FormControl, InputLabel, MenuItem, Select } from '@material-ui/core';
@@ -30,6 +31,7 @@ const App = () => {
               <MenuItem value={30}>Thirty</MenuItem>
             </Select>
           </FormControl>
+          <InputBar />
         </Container>
       </div>
     </Box>
