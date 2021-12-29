@@ -28,3 +28,4 @@ module.exports = (req, res, next) => {
 // TODO: wrap the geocode call above as a function for async flow processes later
 // TODO: use lat/lng to get elevation/altitude
 // TODO: use lat/lng and elevation/altitude to get UV Index from OpenUV
+// TODO: remove this file
