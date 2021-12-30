@@ -25,14 +25,35 @@ const InputForm = () => {
     setAddressInput('');
   }
 
+  // TODO: pull form out as separate component
+
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Address:
-        </label>
-        <input type="text" value={addressInput} onChange={handleAddressChange} placeholder="Input Address" />
-        <input type="submit" value="Submit" />
+      <form className="border" onSubmit={handleSubmit}>
+        <h2>Address</h2>
+        <div className="flex items-center mb-4">
+          <label className="text-center text-gray-600 pr-4 w-1/3">Street:</label>
+          <input
+            className="w-2/3 border"
+            type="text"
+            value={addressInput}
+            onChange={handleAddressChange}
+            placeholder="Input Street"
+          />
+        </div>
+        <div className="flex items-center mb-4">
+          <label className="text-gray-600 pr-4 w-1/3">City:</label>
+          <input
+            className="w-2/3 border"
+            type="text"
+            value={addressInput}
+            onChange={handleAddressChange}
+            placeholder="Input City"
+          />
+        </div>
+        <button className="bg-blue-600 text-gray-300 rounded-lg px-2" type="submit" onClick={handleSubmit}>
+          Will I Tan?
+        </button>
       </form>
 
       <div>{JSON.stringify(location)}</div>
