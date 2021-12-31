@@ -7,23 +7,33 @@
     - Fitzpatrick Skin Type Chart: https://en.wikipedia.org/wiki/Fitzpatrick_scale
     - Add'l reference: https://www2.palomar.edu/anthro/adapt/adapt_4.htm
     - OpenUV knowledge base: https://www.openuv.io/kb
+    - Farmer's Almanac: https://www.almanac.com/content/uv-index-scale
   - UV radiation exposure
     - Geography
     - Altitude
     - Time of year
     - Time of day: _new Date()_
     - Weather condition
-    - Surface reflection
+    - Surface reflection (are you on water or snow?)
+    - are you wearing SPF and how strong?
+    - Talk about skin death by way of shedding to prevent cancer
   - UV index
   - Duration
   - Use of sun block
     - usage vs uv index: http://www.theozonehole.com/uvindex.htm
 - [ ] Determine input requirements
   - USER: selects skin type
-  - USER: selects location
+  - USER: inputs location
   - USER: selects time of day
+  - USER: inputs SPF strength
+  - Features
+    - Reverse calculation, what if you want to know how much SPF you need?
+    - what if it is night time? (find out sun set time)
+    - some skin types never tan... some tan more easily, what is the time between tan til burn?
 - [ ] Create logic between variables for calculation
   > max sun tan time = (self protected time or skin type * 8)/(UVI * SPF)
+  - sunbathing calculator: https://www.omnicalculator.com/other/sunscreen
+  - talk about choosing Koperska over self protection and Fitzpatrick formula
 - [ ] Collection of APIs for data
   - OpenWeather API: https://openweathermap.org/api/uvi
   - OpenUV API: https://www.openuv.io/
@@ -36,6 +46,8 @@
 - [ ] Add logging
 - [ ] Add error handling
 - [ ] Add unit, integration, coverage tests
+- [ ] Add CircleCI for deployment
+- [ ] Find deployment service
 - [ ] Include API callouts
 - [ ] Include a db (postgres? and redis)
 - [ ] Update Readme, how to run (backend client?)
