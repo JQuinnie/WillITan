@@ -1,20 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
+import ResultsContainer from './ResultsContainer';
 
 const InputForm = () => {
+  // TODO: remove mock data
   const [addressInput, setAddressInput] = useState({
-    street1: '1500 Wynkoop St',
+    street1: '',
     street2: '',
-    city: 'Denver',
-    state: 'CO',
-    zipCode: '80211',
+    city: '',
+    state: '',
+    zipCode: '',
   });
   const [skinTypeInput, setSkinTypeInput] = useState('0');
   const [location, setLocation] = useState('');
 
-  const { handleSubmit, register } = useForm();
+  useEffect(() => {
+    reset(addressInput);
+  }, [addressInput]);
+
+  const { handleSubmit, register, reset } = useForm();
   const url = `http://localhost:3001/tanchecker`;
 
+  // TODO: change to async/await
   function fetchData() {
     fetch(`${url}?address=${addressInput}`)
       .then((res) => res.json())
@@ -26,17 +33,20 @@ const InputForm = () => {
   }
 
   function onSubmit(data) {
-    // e.preventDefault();
-    // fetchData();
-    // setAddressInput('');
     console.log('on submit data: ', data);
+    fetchData();
   }
 
-  // TODO: pull form out as separate component
+  function onError(error) {
+    return console.error(error);
+  }
+
+  // TODO: pull form out as separate component, this is a view
+  // TODO: add validations to form
 
   return (
     <div className="flex flex-col">
-      <form className="border p-2" onSubmit={handleSubmit(onSubmit)}>
+      <form className="border p-2" onSubmit={handleSubmit(onSubmit, onError)}>
         <h1 className="flex justify-center m-2">ADDRESS</h1>
         <div className="flex flex-col">
           {Object.keys(addressInput).map((key, idx) => (
@@ -73,7 +83,7 @@ const InputForm = () => {
         </div>
       </form>
 
-      <div>{JSON.stringify(location)}</div>
+      {location && <ResultsContainer data={location} />}
     </div>
   );
 };
